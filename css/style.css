@@ -436,6 +436,10 @@ img {
     color: var(--light-color);
 }
 
+.footer-social-container {
+    margin-right: 80px;
+}
+
 .footer-social-text {
     color: var(--whiteBackground-color);    
     font-size: 16px;
@@ -467,6 +471,59 @@ img {
 
 .footer-social-icon {
     fill: var(--light-color);
+}
+
+.footer-text-action {    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--whiteBackground-color);
+    margin-bottom: 16px;
+}
+
+.footer-form-input {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--whiteBackground-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: inherit;
+    box-sizing: border-box;
+    color: var(--whiteBackground-color);
+    padding-left: 16px;
+    margin-right: 24px;
+}
+
+.footer-form-input::placeholder {
+    display: flex;
+    align-items: center;
+    color: var(--whiteBackground-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.48px;
+}
+
+.footer-form-btn {
+    color: var(--whiteBackground-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: var(--primaryBrand-color);
+    border: none;
+}
+
+.footer-form-icon {
+    fill: var(--whiteBackground-color);
 }
 
 /* Portfolio */
