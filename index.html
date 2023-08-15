@@ -431,23 +431,21 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form-container">
+        <form class="footer-form">
           <p class="footer-text-action">Subscribe</p>
-          <form class="footer-form">
-            <input
-              type="email"
-              class="footer-form-input"
-              name="user-email"
-              placeholder="E-mail"
-            />
-            <button class="footer-form-btn" type="submit">
-              Subscribe
-              <svg class="footer-form-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-subscribe"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+          <input
+            type="email"
+            class="footer-form-input"
+            name="user-email"
+            placeholder="E-mail"
+          />
+          <button class="footer-form-btn" type="submit">
+            Subscribe
+            <svg class="footer-form-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-subscribe"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <!-- Modal window -->
@@ -463,6 +461,66 @@
             <use href="./images/icons.svg#icon-close-button"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <p class="modal-form-action">
+            Leave your contacts and we will call you back
+          </p>
+          <label class="modal-form-field">
+            Name
+            <span class="modal-form-input-wrapper">
+              <input
+                class="modal-form-imput"
+                type="text"
+                name="user-name"
+                minlength="2"
+                pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄйЙʼ]+"
+                required
+              />
+              <svg class="modal-form-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            Phone
+            <span class="modal-form-input-wrapper">
+              <input
+                class="modal-form-imput"
+                type="tel"
+                name="user-phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <svg class="modal-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            Email
+            <span class="modal-form-input-wrapper">
+              <input
+                class="modal-form-imput"
+                type="email"
+                name="user-email"
+                required
+              />
+              <svg class="modal-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            Comment
+            <textarea
+              class="modal-form-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <button class="modal-form-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
