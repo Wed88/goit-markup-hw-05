@@ -829,7 +829,7 @@ img {
     color: var(--primaryBrand-color);
 }
 
-.modal-form-checkbox:checked ~ .modal-form-checkbox-wrapper {
+.modal-form-checkbox:checked + .modal-form-checkbox-label .modal-form-checkbox-wrapper {
     fill: var(--light-color);
     background-color: var(--pressedState-color);
     border: none;
